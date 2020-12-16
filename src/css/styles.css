@@ -1,0 +1,84 @@
+html {
+  background-color: #19a2ae;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Kumbh Sans", sans-serif; }
+
+html::after,
+html::before {
+  box-sizing: inherit; }
+
+h1 {
+  font-family: "Kumbh Sans", sans-serif;
+  color: #19a2ae;
+  text-align: center; }
+
+body .bubble-bottom {
+  display: none; }
+
+body .profile-card {
+  background-color: white;
+  box-shadow: 0 3px 6px #6a6f81;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  max-width: 90%;
+  height: 60vh;
+  align-items: center;
+  margin: 0.5rem auto;
+  /*border: thick solid black;*/
+  border-radius: 1rem; }
+  body .profile-card .back-img {
+    border-radius: 1rem 1rem 0 0;
+    width: 100%;
+    height: 25%; }
+  body .profile-card .circle-img {
+    position: absolute;
+    top: 15%;
+    border: thick solid white;
+    border-radius: 50%; }
+  body .profile-card .p-user {
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    font-weight: bold; }
+    body .profile-card .p-user span {
+      color: #6a6f81; }
+    body .profile-card .p-user .city {
+      color: #6a6f81;
+      margin-top: 0.75rem;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center; }
+  body .profile-card p {
+    margin-top: 2.5rem;
+    display: block; }
+  body .profile-card .stats {
+    display: flex;
+    flex-direction: row; }
+    body .profile-card .stats .i-b {
+      margin-right: 1rem;
+      text-align: center; }
+
+body .attribution {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 11px;
+  text-align: center; }
+  body .attribution a {
+    color: #3e52a3; }
+
+body .sub-t {
+  color: #6a6f81;
+  margin-top: -1rem !important;
+  text-align: center; }
+
+@media screen and (min-width: 480px) {
+  body {
+    position: relative; }
+    body .profile-card {
+      margin-top: 5rem;
+      max-width: 30%; }
+    body .bubble-bottom {
+      display: inline;
+      position: absolute;
+      right: 0;
+      bottom: -1; } }

@@ -1,0 +1,118 @@
+//Variables
+//Colours
+$cyan: hsl(185, 75%, 39);
+$blue: hsl(229, 23%, 23%);
+$grayish-blue: hsl(227, 10%, 46%);
+$neutral: hsl(0, 0%, 59%);
+//fonts
+$font: "Kumbh Sans", sans-serif;
+//Shadow
+$shadow: 0 3px 6px $grayish-blue;
+
+html {
+  background-color: $cyan;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: $font;
+}
+html::after,
+html::before {
+  box-sizing: inherit;
+}
+h1 {
+  font-family: $font;
+  color: $cyan;
+  text-align: center;
+}
+
+body {
+  .bubble-bottom {
+    display: none;
+  }
+
+  //Card styles
+  .profile-card {
+    background-color: white;
+    box-shadow: $shadow;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    max-width: 90%;
+    height: 60vh;
+    align-items: center;
+    margin: 0.5rem auto;
+    /*border: thick solid black;*/
+    border-radius: 1rem;
+    .back-img {
+      border-radius: 1rem 1rem 0 0;
+      width: 100%;
+      height: 25%;
+    }
+    .circle-img {
+      position: absolute;
+      top: 15%;
+      border: thick solid white;
+      border-radius: 50%;
+    }
+    .p-user {
+      margin-top: 5rem;
+      font-size: 1.7rem;
+      font-weight: bold;
+      span {
+        color: $grayish-blue;
+      }
+      .city {
+        color: $grayish-blue;
+        margin-top: 0.75rem;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+      }
+    }
+    p {
+      margin-top: 2.5rem;
+      display: block;
+    }
+    .stats {
+      display: flex;
+      flex-direction: row;
+
+      .i-b {
+        margin-right: 1rem;
+        text-align: center;
+      }
+    }
+  }
+
+  .attribution {
+    font-family: $font;
+    font-size: 11px;
+    text-align: center;
+    a {
+      color: hsl(228, 45%, 44%);
+    }
+  }
+
+  .sub-t {
+    color: $grayish-blue;
+    margin-top: -1rem !important;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    position: relative;
+
+    .profile-card {
+      margin-top: 5rem;
+      max-width: 30%;
+    }
+    .bubble-bottom {
+      display: inline;
+      position: absolute;
+      right: 0;
+      bottom: -1;
+    }
+  }
+}
